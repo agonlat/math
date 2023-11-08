@@ -423,3 +423,36 @@ events:
       
       
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/JetBrains/CLion 2023.2.1/bin/cmake/win/x64/share/cmake-3.26/Modules/CheckCXXCompilerFlag.cmake:40 (cmake_check_compiler_flag)"
+      - "cmake-build-debug/_deps/catch2-src/CMake/CatchMiscFunctions.cmake:12 (check_cxx_compiler_flag)"
+      - "cmake-build-debug/_deps/catch2-src/CMake/CatchMiscFunctions.cmake:119 (add_cxx_flag_if_supported_to_targets)"
+      - "cmake-build-debug/_deps/catch2-src/src/CMakeLists.txt:342 (add_build_reproducibility_settings)"
+    checks:
+      - "Performing Test HAVE_FLAG__ffile_prefix_map_C__Users_agon__CLionProjects_JP_cmake_build_debug__deps_catch2_src__"
+    directories:
+      source: "C:/Users/agon_/CLionProjects/JP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sdvwt6"
+      binary: "C:/Users/agon_/CLionProjects/JP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sdvwt6"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/agon_/CLionProjects/JP/cmake-build-debug/_deps/catch2-src/extras;C:/Users/agon_/CLionProjects/JP/cmake-build-debug/_deps/catch2-src/CMake"
+    buildResult:
+      variable: "HAVE_FLAG__ffile_prefix_map_C__Users_agon__CLionProjects_JP_cmake_build_debug__deps_catch2_src__"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/agon_/CLionProjects/JP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sdvwt6
+        
+        Run Build Command(s):C:/PROGRA~1/JETBRA~1/CLION2~1.1/bin/ninja/win/x64/ninja.exe -v cmTC_19c47 && [1/2] C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\G__~1.EXE -DHAVE_FLAG__ffile_prefix_map_C__Users_agon__CLionProjects_JP_cmake_build_debug__deps_catch2_src__  -std=gnu++17   -ffile-prefix-map=C:/Users/agon_/CLionProjects/JP/cmake-build-debug/_deps/catch2-src/= -o CMakeFiles/cmTC_19c47.dir/src.cxx.obj -c C:/Users/agon_/CLionProjects/JP/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-sdvwt6/src.cxx
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\JETBRA~1\\CLION2~1.1\\bin\\mingw\\bin\\G__~1.EXE   CMakeFiles/cmTC_19c47.dir/src.cxx.obj -o cmTC_19c47.exe -Wl,--out-implib,libcmTC_19c47.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        
+      exitCode: 0
+...
