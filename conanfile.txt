@@ -1,0 +1,5 @@
+[requires]
+#here are the libraries that you need, like 
+#boost/1.83.0
+[generators]
+cmake
